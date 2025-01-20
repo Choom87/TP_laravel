@@ -22,3 +22,11 @@ docker run --rm --interactive --tty \
 vendor/bin/sail up -d
 vendor/bin/sail artisan migrate
 ```git
+
+# Codage BDD - Migration des tables posts , Comment et Reply :
+posts : sail php artisan make:model Post -mc     # migration et controller
+Comment : sail php artisan make:model Comment -mc     # migration et controller
+Reply : sail php artisan make:model Reply -mc     # migration et controller
+
+
+
